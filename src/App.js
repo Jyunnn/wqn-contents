@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} alt="logo" />
+        <img className="App-logo" src={logo} alt="logo" />
         <p>
-          我們將目錄放在下方連結，您可瀏覽參考
+          {/* 我們將目錄放在下方連結，您可瀏覽參考 */}
         </p>
       </header>
     </div>
