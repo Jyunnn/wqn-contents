@@ -11,8 +11,6 @@ function Contents() {
         )
     })
 
-    console.log(content);
-
     return (
         <Wrapper>
             { content }
@@ -23,11 +21,15 @@ function Contents() {
 const Wrapper = styled.div`
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-gap: 40px;
+    justify-content: center;
+    grid-gap: 20px;
     margin: auto;
-    max-width: 960px;
+    max-width: 900px;
     @media(max-width: 768px) {
         grid-template-columns: auto auto auto;
+    }
+    @media(max-width: 414px) {
+        grid-template-columns: auto auto;
     }
 `;
 
